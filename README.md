@@ -1,4 +1,34 @@
-##Problems with Javascript Frameworks##
+#meteor-rivets#
+An example of how to combine Rivets with MeteorJS for an elegant, full-stack, web application platform.
+
+##Quick Start##
+1. Download and install MeteorJS.<br/>
+    Follow the instructions at: https://www.meteor.com/install
+
+2. Clone my git repository (requires Git; see https://git-scm.com/downloads):
+    ```
+    $ git clone https://github.com/serafino/meteor-rivets.git
+    ```
+
+3. Setup Meteor app 
+    ```
+    $ cd meteor-rivets
+    $ meteor create .
+    $ meteor add iron:router
+    $ meteor npm install --save rivets
+    $ meteor npm install
+    ```
+ 
+4. Start the app
+  ```
+  $ meteor
+  ```
+
+5. Visit [http://localhost:8080](http://localhost:8080) and play with the "counter" component
+
+##What are we trying to solve?##
+There is a litany of issues with Javascript front-end frameworks:
+
 * They tend to follow the law of entropy. As frameworks mature, they become more complex and the learning curve grows. (Angular 2 is a great example of this).
 * There is an endless supply of templating engines - each has troublesome ideosyncrasies and none seem to provide a solution for all of the following problems at once:
     - two-way data binding (React, Backbone and jQuery fail here)
@@ -43,8 +73,9 @@
 * The Meteor team is beginning to favor React and Angular over "reinventing the wheel" for front-end development, but each of these frameworks has its share of issues as mentioned earlier.
 * MeteorJS shares a target audience with PHP and Ruby. While its philosophy of blurring the line between client and server is ideal for blogs and personal websites, many enterprises want a robust, service-oriented architecture, often with services living behind a demilitarized proxy.
 
-##meteor-rivets##
-meteor-rivets solves the front-end frameworks issue. Remember that we are looking for:
+##meteor-rivets solves the front-end frameworks issue##
+
+I will provide examples of how to solve the other issues at another time. Remember that we are looking for:
 * two-way data binding
 * custom HTML tags and attributes
 * elegant separation of concerns between markup and view logic
@@ -53,33 +84,6 @@ Blaze doesn't have any kind of support for two-way data-binding or custom tags; 
 
 Unlike other front-end frameworks, Rivets isn't an opinionated, heavyweight, swiss-army knife; instead, it's extremely flexible, portable, and light-weight. This makes it ideal for combination with Blaze in a "best of both worlds" solution.
 
-##Quick Start##
-1. Download and install MeteorJS.<br/>
-    Follow the instructions at: https://www.meteor.com/install (1 minute)
-
-2. Clone my git repository (requires Git *):
-    ```
-    $ git clone https://github.com/serafino/meteor-rivets.git
-    ```
-
-3. Setup Meteor app 
-    ```
-    $ cd meteor-rivets
-    $ meteor create .
-    $ meteor add iron:router
-    $ meteor npm install --save rivets
-    $ meteor npm install
-    ```
- 
-4. Start the app
-  ```
-  $ meteor
-  ```
-
-5. Visit http://localhost:8080 and play with the "counter" component
-
-* https://git-scm.com/downloads
-
 ##See also##
-For additonal information about MeteorJS, go to http://www.meteor.com.
+For additonal information about MeteorJS, go to http://www.meteor.com.<br/>
 For additional information about rivets, go to http://rivetsjs.com.
