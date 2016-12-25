@@ -1,0 +1,7 @@
+<template name="counter">
+  <button rv-on-click="increment">+</button>
+  <button rv-on-click="decrement">-</button>
+  <button rv-on-click="toggleColor">Toggle color</button>
+
+  <p rv-style="color | toColorStyle">{ counter }</p>
+</template>
