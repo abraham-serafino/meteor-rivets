@@ -15,7 +15,7 @@ An example of how to combine Rivets with MeteorJS for an elegant, full-stack, we
     $ cd meteor-rivets
     $ meteor create .
     $ meteor add iron:router
-    $ meteor npm install --save rivets
+    $ meteor npm install --save babel-runtime rivets
     $ meteor npm install
     ```
  
